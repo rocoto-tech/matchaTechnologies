@@ -32,22 +32,26 @@ html(lang='en')
 				div.navbar-responsive__logo
 					img(src="img/matchalogocolor.png", alt="Logo en colores matcha")
 				div.navbar-responsive__boton
-					img(src="img/menu_list.png" alt="Menu navbar")
+					img#menu(src="img/menu_list.png" alt="Menu navbar")
 			
-			.navbar-desplegado
+			.navbar-desplegado.oculto
+				div.navbar-desplegado__item.close
+					img#close(src="img/close.png", alt="Close icon")
 				div.navbar-desplegado__item 
-					a What 
+					a We offer 
 				div.navbar-desplegado__item 
 					a Services 
 				div.navbar-desplegado__item 
-					a Who
+					a Why matcha
+				div.navbar-desplegado__item 
+					a Who we are
 				div.navbar-desplegado__item 
 					a Contact  
+				div.navbar-desplegado__item.social
+					img(src="img/facebook.png", alt="Logo de facebook")
+					img(src="img/instagram.png", alt="Logo de Instagram")
 
-					
 
-			
-			
 		section.landing
 			//- h1 MATCHA TECHNOLOGIES
 			//- h2 Landing page
