@@ -1,5 +1,8 @@
 .navbar-responsive
     display: none 
+.navbar-desplegado
+    display: none 
+
 .navbar
     background-color: $color2
     color: white
@@ -34,6 +37,17 @@
 
 
 @media only screen and (max-width: 600px)
+    .navbar-desplegado
+        display: flex
+        width: 200px
+        flex-direction: column
+        background-color: $color2
+        color: white
+        
+        &__item
+            padding-top: 10px
+            width: 100%
+
     .navbar
         display: none
         
@@ -51,3 +65,5 @@
         &__boton
             img
                 width: 30px
+
+    
