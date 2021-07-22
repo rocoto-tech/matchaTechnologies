@@ -1,9 +1,24 @@
 doctype
 html(lang='en')
-    head
-        meta(charset='utf-8')
-        title Matcha Technologies 
-    body
-        h1 MATCHA TECHNOLOGIES
-        h2 Landing page
-        h2 prueba 
+	head
+		meta(charset='utf-8')
+		title Matcha Technologies 
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet")
+		link(rel="stylesheet", href="main.css")
+
+	body
+		h1 MATCHA TECHNOLOGIES
+		h2 Landing page
+		include includes/mixins.pug
+		section.services.container 
+			img(src="../img/services.png", alt="title services")
+			.services__box 
+				+sbox('Mobile Apps', 'iOS and Android applications for diverse needs across industries','../img/services1.png') 
+				+sbox('Frontend Web', 'Beautifully websites to bring ideas to life','../img/services1.png') 
+				+sbox('Product Desing', 'Creation of intuitive and functional software that is easy to use','../img/services1.png')
+				+sbox('Branding', 'We provide logo design and branding guidelines','../img/services1.png') 
+			
+
+

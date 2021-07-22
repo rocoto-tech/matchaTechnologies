@@ -1,3 +1,31 @@
-.cascada {
-  color: #101010;
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  padding: 60px 15%;
+}
+
+.services__box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 70px;
+}
+.services__box__item {
+  display: grid;
+  align-items: top;
+  justify-items: center;
+  text-align: center;
+  height: 270px;
+}
+.services__box__item h4 {
+  color: #4EB748;
+  font-weight: 800;
+  font-size: 24px;
+}
+.services__box__item p {
+  margin: 5px 0;
+  color: #56219B;
+  font-weight: 600;
+  font-size: 22px;
 }
