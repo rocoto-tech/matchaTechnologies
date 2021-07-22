@@ -7,26 +7,86 @@ body
 	font-family: $fuente
 
 .container
-	padding: 60px 15%
+	padding: 50px 18%
 
+/* -------------------------------- services -------------------------------- */
 .services
 	&__box
 		display: grid
 		grid-template-columns: repeat(4,1fr)
-		grid-gap: 70px
+		grid-gap: 100px
+		margin-top: 40px
 		&__item
 			display: grid
 			align-items: top
 			justify-items: center
-			text-align: center
-			height: 270px
+			// text-align: center
+			// height: 270px
 			h4 
 				color: $color1 
 				font-weight: 800
 				font-size: 24px
+				margin: 14px 0
 				
 			p 
-				margin: 5px 0 
+				margin: 0px 0 
 				color: $color2
 				font-weight: 600
 				font-size: 22px
+				text-align: center
+				height: 80px
+
+/* ------------------------------- why matcha ------------------------------- */
+.whymatcha
+	background-color: #F3F2F2
+	margin-top: 60px
+	&__box 
+		display: flex
+		color: white
+		align-items: center
+		font-weight: 600
+		font-size: 25px
+		text-align: center
+		div:nth-child(1)
+			background-color: #401A74
+
+			width: 356px
+			padding: 65px 35px
+		div:nth-child(2)
+			background-color: $color1
+			width: 300px
+			padding: 58px 30px
+		img
+			margin-left: -100px
+			margin-bottom: -50px
+
+/* ------------------------------- who we are ------------------------------- */
+.whoare
+	&__box 
+		display: grid
+		grid-template-columns: 1fr 1fr
+		margin-top: 60px
+		grid-gap: 50px
+		&__perfil 
+			display: flex
+			align-items: center
+			font-weight: 600
+			line-height: 32px
+			img 
+				margin-right: 15px
+	
+			h3
+				font-size: 22px
+				color: $color1
+			p 
+				color: $color2
+				padding-right: 20px
+				font-size: 22px
+
+			a 
+				color: $color1
+				font-weight: 700
+				font-size: 20px
+
+/* --------------------------------- contact -------------------------------- */
+	.contact
