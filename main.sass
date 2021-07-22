@@ -5,6 +5,8 @@ $color2: #56219B
 
 body
 	font-family: $fuente
+	margin: 0
+	padding: 0
 
 .container
 	padding: 50px 18%
@@ -89,4 +91,70 @@ body
 				font-size: 20px
 
 /* --------------------------------- contact -------------------------------- */
-// .contact
+.contact
+	&__box 
+		padding: 0 100px
+	
+		input
+			color: #5B4199
+			outline: none
+			width: 100%
+			border: 2px solid #979797
+			padding: 10px
+			border-radius: 20px
+			font-size: 20px
+			margin-top: 20px
+			font-weight: 700
+			font-family: $fuente
+
+
+		textarea
+			outline: none
+			width: 100%
+			border: 2px solid #979797
+			padding: 10px
+			border-radius: 20px
+			font-size: 20px
+			margin-top: 20px
+			font-weight: 700
+
+		::placeholder
+			color: $color2
+			font-weight: 600
+			font-family: $fuente
+		div 
+			display: grid
+			grid-template-columns: 1fr 1fr
+			grid-gap: 100px
+		button
+			// text-align: right
+			float: right
+			color: white
+			background-color: $color1
+			padding: 10px 50px
+			margin-top: 10px
+			border-radius: 20px
+			font-size: 20px
+			border: 0px solid 
+		button:hover 
+			cursor: pointer
+
+/* -------------------------------- location -------------------------------- */
+
+.location
+	background-image: url('img/banner.png')
+	// text-align: justify
+	color: white
+	font-size: 22px
+	font-weight: 700
+	padding-top: 100px
+	padding-bottom: 50px
+	padding-left: 700px
+	padding-right: 800px
+
+/* --------------------------------- footer --------------------------------- */
+
+footer
+	background-color: #151515
+
+
