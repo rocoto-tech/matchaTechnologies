@@ -9,13 +9,43 @@
     display: none
   /* ------------------------------- why matcha ------------------------------- */
   .whymatcha
-    display: none
+    img 
+      width: 230px
+    &__box
+      display: grid
+      grid-template-columns: 1fr
+      font-size: 20px
+      p 
+        margin: 20px
+
+      div:nth-child(1)
+        width: 100%
+        padding: 0px
+        margin-bottom: 5px
+        margin-top: 20px
+      div:nth-child(2)
+        width: 100%
+        padding: 0px
+      img 
+        display: none
+
   /* ------------------------------- who we are ------------------------------- */
   .whoare
-    display: none
+    img
+      width: 200px
+    &__box 
+      grid-template-columns: 1fr
+      text-align: center
+      &__perfil 
+        display: block
+        img 
+          display: block
+          margin: auto
+      
   /* --------------------------------- contact -------------------------------- */
   .contact
-   
+    img 
+      width: 230px
     &__box 
       padding: 0 10px
     
@@ -64,6 +94,7 @@
       font-weight: 700
     img 
       margin-right: 50px	
+      width: 114px
     img:nth-child(2)
       display: none
 
