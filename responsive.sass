@@ -6,9 +6,24 @@
     margin: auto
   /* -------------------------------- services -------------------------------- */
   .services
-    display: none
+    img
+      width: 207px
+    &__box
+      grid-template-columns: 1fr
+      grid-gap: 10px
+      text-align: center
+      &__item 
+        img 
+          width: 76px
+        h4 
+          font-size: 20px
+        p 
+          font-size: 18px
+          padding: 0 50px
+
   /* ------------------------------- why matcha ------------------------------- */
   .whymatcha
+    margin-top: 0
     img 
       width: 230px
     &__box
