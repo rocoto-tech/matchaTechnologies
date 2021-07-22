@@ -11,7 +11,26 @@ html(lang='en')
 		//- link(rel="stylesheet", href="responsive.sass")
 
 
+
 	body
+		nav
+			div.navbar
+				div.navbar__logo
+					img(src="img/matchalogocolor.png", alt="Logo en colores matcha")
+
+				div.navbar__titles
+					a What	
+					a Services 
+					a Who
+					a contact
+					
+				div.navbar__social
+					img(src="img/facebook.png", alt="Logo de facebook")
+					img(src="img/instagram.png", alt="Logo de Instagram")
+				
+			
+			
+
 		h1 MATCHA TECHNOLOGIES
 		h2 Landing page
 		include includes/mixins.pug
@@ -71,6 +90,8 @@ html(lang='en')
 			div
 				p E-MAIL 
 				p info@matchatech.dev
+
+	script(src="js/barra.js") 
 
 
 
