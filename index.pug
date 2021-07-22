@@ -6,44 +6,44 @@ html(lang='en')
 		link(rel="preconnect" href="https://fonts.googleapis.com")
 		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
 		link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet")
-		link(rel="stylesheet", href="main.css")
+		link(rel="stylesheet", href="main.sass")
 
 	body
 		h1 MATCHA TECHNOLOGIES
 		h2 Landing page
 		include includes/mixins.pug
 		section.services.container 
-			img(src="../img/services.png", alt="title services")
+			img(src="img/services.png", alt="title services")
 			.services__box 
-				+sbox('Mobile Apps', 'iOS and Android applications for diverse needs across industries','../img/services1.png') 
-				+sbox('Frontend Web', 'Beautifully websites to bring ideas to life','../img/services1.png') 
-				+sbox('Product Desing', 'Creation of intuitive and functional software that is easy to use','../img/services1.png')
-				+sbox('Branding', 'We provide logo design and branding guidelines','../img/services1.png') 
+				+sbox('Mobile Apps', 'iOS and Android applications for diverse needs across industries','img/services1.png') 
+				+sbox('Frontend Web', 'Beautifully websites to bring ideas to life','img/services1.png') 
+				+sbox('Product Desing', 'Creation of intuitive and functional software that is easy to use','img/services1.png')
+				+sbox('Branding', 'We provide logo design and branding guidelines','img/services1.png') 
 		section.whymatcha.container 
-			img(src="../img/why.png", alt="title why matcha")
+			img(src="img/why.png", alt="title why matcha")
 			.whymatcha__box 
 				div 
 					p With over nine years in technology and design industries, we strive to provide the best quality solutions based on clients’ needs
 				div 
 					p We are passionate about opportunities to innovate and find ways to solve business chalanges
-				img(src="../img/why1.png", alt="image why matcha")
+				img(src="img/why1.png", alt="image why matcha")
 		section.whoare.container
-			img(src="../img/who.png", alt="title who we are")
+			img(src="img/who.png", alt="title who we are")
 			.whoare__box 
 				.whoare__box__perfil
-					img(src="../img/who1.png", alt="Roger cotrina")
+					img(src="img/who1.png", alt="Roger cotrina")
 					div 
 						h3 Roger Cotrina 
 						p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 						a(href="#") SEE PORTFOLIO
 				.whoare__box__perfil
-					img(src="../img/who2.png", alt="Roger cotrina")
+					img(src="img/who2.png", alt="Roger cotrina")
 					div 
 						h3 Roger Cotrina 
 						p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 						a(href="#") SEE PORTFOLIO
 		section.contact.container 
-			img(src="../img/contact.png", alt="title contact")
+			img(src="img/contact.png", alt="title contact")
 			.contact__box 
 				div 
 					input(type="text")
@@ -56,8 +56,8 @@ html(lang='en')
 		section.location 
 			p We are located in Orlando/FL and thanks to technology, we can embrace new possibilities working from anywhere. Therefore, we are able to offer the best remote services to the client as if we were face to face!
 		footer
-			img(src="../img/matchalogo.png", alt="matcha technologies logo")
-			img(src="../img/line.png", alt="line")
+			img(src="img/matchalogo.png", alt="matcha technologies logo")
+			img(src="img/line.png", alt="line")
 			div
 				p E-MAIL 
 				p info@matchatech.dev
