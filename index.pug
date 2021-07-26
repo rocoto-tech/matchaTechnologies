@@ -9,7 +9,7 @@ html(lang='en')
 		link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet")
 		link(rel="stylesheet", href="styles/main.sass")
 		//- link(rel="stylesheet", href="responsive.sass")
-
+		 
 
 
 	body
@@ -28,11 +28,12 @@ html(lang='en')
 					img(src="img/facebook.png", alt="Logo de facebook")
 					img(src="img/instagram.png", alt="Logo de Instagram")
 			
-			.navbar-responsive
-				div.navbar-responsive__logo
-					img(src="img/matchalogocolor.png", alt="Logo en colores matcha")
-				div.navbar-responsive__boton
-					img#menu(src="img/menu_list.png" alt="Menu navbar")
+			.navbar-container
+				.navbar-responsive
+					div.navbar-responsive__logo
+						img(src="img/matchalogocolor.png", alt="Logo en colores matcha")
+					div.navbar-responsive__boton
+						img#menu(src="img/menu_list.png" alt="Menu navbar")
 			
 			.navbar-desplegado.oculto
 				div.navbar-desplegado__item.close
@@ -40,16 +41,18 @@ html(lang='en')
 				div.navbar-desplegado__item 
 					a We offered 
 				div.navbar-desplegado__item 
-					a Servicess
+					a(href="#services" onclick="close_barra()") Servicess
 				div.navbar-desplegado__item 
 					a Why matcha
 				div.navbar-desplegado__item 
-					a Who we are
+					a(href="#who" onclick="close_barra()") Who we are
 				div.navbar-desplegado__item 
-					a Contact  
+					a(href="#contact" onclick="close_barra()") Contact  
 				div.navbar-desplegado__item.social
-					img(src="img/facebook.png", alt="Logo de facebook")
-					img(src="img/instagram.png", alt="Logo de Instagram")
+					a
+						img(src="img/facebook.png", alt="Logo de facebook")
+					a
+						img(src="img/instagram.png", alt="Logo de Instagram")
 
 
 		section.landing
@@ -125,7 +128,13 @@ html(lang='en')
 				p E-MAIL 
 				p info@matchatech.dev
 
-	script(src="js/barra.js") 
+	script(src="js/barra.js")
+	script. 
+		function close_barra(){
+			document
+			.querySelector("body > nav > div.navbar-desplegado")
+			.classList.add("oculto");
+		}
 
 
 
