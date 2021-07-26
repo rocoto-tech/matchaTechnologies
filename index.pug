@@ -7,7 +7,7 @@ html(lang='en')
 		link(rel="preconnect" href="https://fonts.googleapis.com")
 		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
 		link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet")
-		link(rel="stylesheet", href="main.sass")
+		link(rel="stylesheet", href="styles/main.sass")
 		//- link(rel="stylesheet", href="responsive.sass")
 
 
@@ -65,13 +65,13 @@ html(lang='en')
 		include includes/mixins.pug
 		//- ------------------------------- services ------------------------------- -//
 		br(id="services")
-		section.services.container
+		section.services
 			img.centerimg(src="img/services.png", alt="title services")
 			.services__box 
 				+sbox('Mobile Apps', 'iOS and Android applications for diverse needs across industries','img/services1.png') 
-				+sbox('Frontend Web', 'Beautifully websites to bring ideas to life','img/services1.png') 
-				+sbox('Product Desing', 'Creation of intuitive and functional software that is easy to use','img/services1.png')
-				+sbox('Branding', 'We provide logo design and branding guidelines','img/services1.png') 
+				+sbox('Frontend Web', 'Beautifully websites to bring ideas to life','img/services2.png') 
+				+sbox('Product Desing', 'Creation of intuitive and functional software that is easy to use','img/services3.png')
+				+sbox('Branding', 'We provide logo design and branding guidelines','img/services4.png') 
 		//- ------------------------------ why matcha ------------------------------ -//
 		br(id="why") 
 		section.whymatcha.container
@@ -84,7 +84,7 @@ html(lang='en')
 				img(src="img/why1.png", alt="image why matcha")
 		//- ------------------------------- whoweare ------------------------------- -//
 		br(id="who")
-		section.whoare.container
+		section.whoare
 			img.centerimg(src="img/who.png", alt="title who we are" )
 			.whoare__box 
 				.whoare__box__perfil

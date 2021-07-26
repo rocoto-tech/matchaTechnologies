@@ -1,6 +1,6 @@
 $fuente: 'Raleway', sans-serif
 $color1: #4EB748
-$color2: #56219B
+$color2: #401A74
 
 html 
 	scroll-behavior: smooth
@@ -17,6 +17,7 @@ body
 
 /* -------------------------------- services -------------------------------- */
 .services
+	padding: 50px 18%
 	&__box
 		display: grid
 		grid-template-columns: repeat(4,1fr)
@@ -52,7 +53,7 @@ body
 		font-size: 25px
 		text-align: center
 		div:nth-child(1)
-			background-color: #401A74
+			background-color: $color2
 
 			width: 356px
 			padding: 65px 35px
@@ -66,6 +67,7 @@ body
 
 /* ------------------------------- who we are ------------------------------- */
 .whoare
+	padding: 40px 18%
 	&__box 
 		display: grid
 		grid-template-columns: 1fr 1fr
@@ -96,9 +98,8 @@ body
 .contact
 	&__box 
 		padding: 0 100px
-	
 		input
-			color: #5B4199
+			color: $color2
 			outline: none
 			width: 100%
 			border: 2px solid #979797
@@ -144,9 +145,9 @@ body
 /* -------------------------------- location -------------------------------- */
 
 .location
-	background-image: url('img/banner.png')
+	background-image: url('../img/banner.png')
 	// text-align: justify
-	margin-top: 50px
+	margin-top: 20px
 	color: white
 	font-size: 22px
 	font-weight: 700
@@ -173,8 +174,8 @@ footer
 
 @import responsive
 
-@import styles/navbar
-@import styles/landing
+@import navbar
+@import landing
 
 
 .oculto
