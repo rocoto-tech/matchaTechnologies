@@ -1,20 +1,25 @@
 .landing
+    
     background-color: $color2
     // width: 100%
     color: white
     padding-top: 150px
     display: grid
+    // display: none 
     grid-template-columns: 1fr 1fr
     grid-template-rows: 160px 160px
     grid-template-areas: "what image" "texto image"
+
     padding-left: 20%
-    padding-right: 435px
+    padding-right: 20%
+
     padding-bottom: 88px
 
     &__what
         grid-area: what
         img
-            height: 159px
+            height: 100%
+            // height: auto
     
     &__texto
         grid-area: texto
@@ -26,7 +31,8 @@
         display: flex
         align-items: center
         img
-            height: 325px
+            height: 100%
+            // height: auto
     
 
     // &__left
@@ -52,11 +58,11 @@
         &__what
             grid-area: what
             img
-                height: 98px
+                // height: 98px
 
         &__image
             img
-                height: 133px
+                // height: 133px
 
         &__texto
             padding-left: 16px
