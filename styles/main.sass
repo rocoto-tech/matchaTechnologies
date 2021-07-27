@@ -12,27 +12,34 @@ body
 .container
 	padding: 50px 18%
 /* -------------------------------- landing -------------------------------- */
+
 .landing
-	display: none
-	// background-color: $color2
-	// color: white
+	// display: none
+	background-color: $color2
+	color: white
 	// padding-top: 150px
-	// display: grid
-	// grid-template-columns: 1fr 1fr
+	display: grid
+	grid-template-columns: 1fr 1fr
 	// grid-template-rows: 160px 160px
-	// grid-template-areas: "what image" "texto image"
+	grid-template-areas: "what image" "texto image"
+	
 	// padding-left: 20%
 	// padding-right: 20%
 	// padding-bottom: 88px
-	// &__what
-	// 	grid-area: what
+	&__what
+		grid-area: what
+		justify-self:   right
 	// 	img
 	// 		height: 100%
-	// &__texto
-	// 	grid-area: texto
+	&__texto
+
+		grid-area: texto
+		justify-self:   right
 	// 	font-size: 25px
-	// &__image
-	// 	grid-area: image
+
+	&__image
+		grid-area: image
+		justify-self:   left
 	// 	display: flex
 	// 	align-items: center
 	// 	img
@@ -177,8 +184,11 @@ body
 	font-weight: 700
 	padding-top: 100px
 	padding-bottom: 50px
-	padding-left: 700px
-	padding-right: 800px
+
+	padding-left: 35%
+	padding-right: 42%
+
+	
 
 /* --------------------------------- footer --------------------------------- */
 
