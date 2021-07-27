@@ -7,20 +7,30 @@
   
   /* -------------------------------- landing -------------------------------- */
   .landing
-    display: none
-    // grid-template-columns: 1fr
-    // grid-template-rows: 98px 133px 100%
-    // grid-template-areas: "what" "image" "texto"
-    // padding: 0px
-    // justify-items: center
-    // padding-top: 39px
-    // &__what
-    //   grid-area: what
-    // &__texto
-    //   padding-left: 16px
-    //   padding-right: 16px
-    //   font-size: 20px
-    //   padding-bottom: 20px
+    grid-template-columns: 1fr
+    grid-template-areas: "what" "image" "texto"
+    
+    padding-top: 137px
+    &__what
+      justify-self: center
+      img
+        width: 290px
+    
+    &__texto
+      justify-self: center
+      margin: 0px
+      margin-left: 16px
+      margin-right: 16px
+      font-size: 20px
+      text-align: center
+      
+      margin-bottom: 20px
+
+    &__image
+      justify-self: center
+      img
+        width: 220px
+   
 
   /* -------------------------------- services -------------------------------- */
   .services

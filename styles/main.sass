@@ -14,36 +14,29 @@ body
 /* -------------------------------- landing -------------------------------- */
 
 .landing
-	// display: none
 	background-color: $color2
 	color: white
-	// padding-top: 150px
 	display: grid
 	grid-template-columns: 1fr 1fr
-	// grid-template-rows: 160px 160px
 	grid-template-areas: "what image" "texto image"
 	
-	// padding-left: 20%
-	// padding-right: 20%
-	// padding-bottom: 88px
 	&__what
 		grid-area: what
-		justify-self:   right
-	// 	img
-	// 		height: 100%
-	&__texto
+		justify-self: right
 
+	&__texto
 		grid-area: texto
 		justify-self:   right
-	// 	font-size: 25px
+		font-size: 25px
+		margin-left: 50%
+		font-weight: 600
+		text-align: justify
+		margin-right: 15px
 
 	&__image
 		grid-area: image
 		justify-self:   left
-	// 	display: flex
-	// 	align-items: center
-	// 	img
-	// 		height: 100%
+
 
 /* -------------------------------- services -------------------------------- */
 .services

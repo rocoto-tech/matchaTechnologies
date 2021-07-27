@@ -1,5 +1,8 @@
+// Barra Version Mobile
 .navbar-responsive
     display: none 
+
+// Menu Verision Mobile
 .navbar-desplegado
     display: none 
 
@@ -12,7 +15,6 @@
     top: 0
     width: 100%
     height: 100px
-    
     
     // GRID NAVBAR 
     grid-template-columns: 2fr 4fr 2fr
@@ -42,33 +44,34 @@
         display: flex
         justify-content: space-between
 
+
 /* -------------------------------- responsive ------------------------------- */
 @media only screen and (max-width: 600px)
+
+    .navbar
+        display: none
+
+    // Menu Mobile
     .navbar-desplegado
         display: flex
         position: fixed
-
         top: 0
         left: 0
-
         width: 100%
         height: 100%
-
         z-index: 2
-
         background-color: $color2
         color: white
         font-size: 20px
-
-        padding-top: 30px
+        padding-top: 25px
         flex-direction: column
-        
         text-align: center
 
         a 
             color: white
             text-decoration: none
             font-weight: 600
+
         a:hover
             color: $color1
 
@@ -84,16 +87,13 @@
                 margin-right: 20px
                 img
                     height:  27px
-    .navbar
-        display: none
 
     .navbar-container
-        // padding-top: 40px 
+        padding-top: 40px 
         position: fixed
         top: 0
         left: 0
         width: 100%
-        
         background-color: $color2
     
     .navbar-responsive
@@ -108,13 +108,12 @@
         
 
         &__logo
-            img
-                
+            img 
                 height: 49px
 
         &__boton
             img
-                width: 30px
+                width: 27px
 
 
        
