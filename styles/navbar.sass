@@ -8,28 +8,24 @@
 
 .navbar
     display: grid
-    
     background-color: $color2
     color: white
     position: fixed
+    padding: 0 18%
     top: 0
-    width: 100%
+    width: 64%
     height: 100px
-    
     // GRID NAVBAR 
-    grid-template-columns: 2fr 4fr 2fr
-    
+    grid-template-columns: 2fr 4fr 1fr
     justify-items: center
     align-items: center 
-
     // ANIMATION
     transition: all 0.4s ease
     &.color-change
         background-color: $color2
         height: 80px
-
     &__titles
-        width: 60%
+        width: 80%
         display: flex
         justify-content: space-between
         font-size: 25px
@@ -42,9 +38,11 @@
             color: $color1
 
     &__social
-        width: 30%
         display: flex
-        justify-content: space-between
+        justify-content: flex-end
+        width: 100%
+        img:nth-child(1)
+            margin-right: 15px
 
 
 /* -------------------------------- responsive ------------------------------- */
